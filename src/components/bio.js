@@ -45,13 +45,13 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
-          See my 
+          This blog is more current, but check out my 
           {` `}
           <a href={`https://jacobgrisham.com`}>
             portfolio
           </a>
           {` `}
-          of software engineering projects.
+          of early software engineering projects.
         </p>
       )}
     </div>
