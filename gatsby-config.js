@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Jacob Grisham's Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jacob Grisham`,
+      summary: `I'm a software engineer based in San Francisco. I write posts to help solve your problems and share lessons learned in implementation, with a focus on AWS Serverless, AWS CDK, and React.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Learning in public to help you to create scalable, maintainable, economical solutions using AWS Serverless and AWS CDK and to help you create interactive, data-rich user interfaces with React. Currently drawing the map and sharing stories of trails trekked while building solutions in AWS Serverless, AWS CDK, and React and sharing a little bit about your author, Jacob Grisham.`,
+    siteUrl: `https://jacobgrisham.dev/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `JacobDGrisham`,
     },
   },
   plugins: [
@@ -102,7 +102,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Jacob Grisham Blog RSS Feed",
           },
         ],
       },
@@ -110,15 +110,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `Jacob Grisham Blog`,
+        short_name: `Jacob Grisham Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/jacob-grisham-logo.png`, // This path is relative to the root of the site.
       },
     },
   ],
