@@ -29,6 +29,13 @@ const BlogIndex = ({ data, location }) => {
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
+          let color;
+          if (post.frontmatter.category === 'Lessons Learned') {
+            color = "navy"
+          } else if (post.frontmatter.category === 'Problem Solving') {
+            color = "gold"
+          } else color = "grey"
+
           return (
             <li key={post.fields.slug}>
               <article
@@ -42,6 +49,7 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
+                  <small className={`${color} blog-post-category`}>{post.frontmatter.category}</small>
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
@@ -87,6 +95,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          category
         }
       }
     }

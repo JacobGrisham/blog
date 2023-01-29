@@ -2,6 +2,7 @@
 title: Technologies I've Worked With
 date: "2022-01-29T22:12:03.284Z"
 description: This is a running list of all the software engineering technologies that I've worked with.
+category: Bio
 ---
 
 ![Photo of Star Wars Lego Storm Trooper inside of mechanical keyboard](./stormtrooper-in-keyboard.png)

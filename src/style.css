@@ -58,6 +58,9 @@
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #d1dce5;
+  --color-gold: rgb(200,155,83);
+  --color-navy: rgb(33, 55, 75);
+  --color-grey: rgb(173,173,173);
 }
 
 /* HTML elements */
@@ -311,6 +314,27 @@ a:focus {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
+}
+
+.blog-post-category {
+  padding: 0.2rem 1.5rem;
+  border-radius: 15px;
+  margin-right: 1rem;
+  font-family: var(--font-heading);
+}
+
+.gold {
+  background-color: var(--color-gold);
+  color: white;
+}
+
+.navy {
+  background-color: var(--color-navy);
+  color: white;
+}
+
+.grey {
+  background-color: var(--color-grey);
 }
 
 .gatsby-highlight {

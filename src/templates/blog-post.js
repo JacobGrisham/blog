@@ -11,6 +11,13 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
+  let color;
+  if (post.frontmatter.category === 'Lessons Learned') {
+    color = "navy"
+  } else if (post.frontmatter.category === 'Problem Solving') {
+    color = "gold"
+  } else color = "grey"
+
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -20,7 +27,7 @@ const BlogPostTemplate = ({
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p><span className={`${color} blog-post-category`}>{post.frontmatter.category}</span> {post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -91,6 +98,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        category
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
