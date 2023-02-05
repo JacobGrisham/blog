@@ -45,10 +45,10 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
-          This blog is more current, but check out my 
+          The content of this blog is a more current reflection of where I am, but check out my 
           {` `}
           <a href={`https://jacobgrisham.com`}>
-            portfolio
+            professional portfolio
           </a>
           {` `}
           of early software engineering projects.

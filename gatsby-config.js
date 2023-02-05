@@ -12,9 +12,9 @@ module.exports = {
     title: `Jacob Grisham's Blog`,
     author: {
       name: `Jacob Grisham`,
-      summary: `I'm a software engineer based in San Francisco. I write posts to help solve your problems and share lessons learned in implementation, with a focus on AWS Serverless, AWS CDK, and React.`,
+      summary: `I'm a software engineer based in San Francisco. I write posts to help solve your software engineering problems and to share lessons learned in implementation, with a focus on AWS Serverless, AWS CDK, and React.`,
     },
-    description: `Learning in public to help you to create scalable, maintainable, economical solutions using AWS Serverless and AWS CDK and to help you create interactive, data-rich user interfaces with React. Currently drawing the map and sharing stories of trails trekked while building solutions in AWS Serverless, AWS CDK, and React and sharing a little bit about your author, Jacob Grisham.`,
+    description: `Learning in public to help you to create scalable, maintainable, economical solutions using AWS Serverless with AWS CDK and to help you create interactive, data-rich user interfaces with React. Drawing you a map of trails trekked while coding solutions and sharing campfire stories of building software in the industry, interspersed with autobiographical accounts of your author, Jacob Grisham.`,
     siteUrl: `https://jacobgrisham.dev/`,
     social: {
       twitter: `JacobDGrisham`,
