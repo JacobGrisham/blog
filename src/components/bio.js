@@ -45,13 +45,12 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
-          The content of this blog is a more current reflection of where I am, but check out my 
+          You can find me on 
           {` `}
-          <a href={`https://jacobgrisham.com`}>
-            professional portfolio
+          <a href={`https://www.linkedin.com/in/jacobgrisham/`}>
+          LinkedIn
           </a>
-          {` `}
-          of early software engineering projects.
+          .
         </p>
       )}
     </div>

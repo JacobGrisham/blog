@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -12,11 +12,8 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Bio />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          Ooops, something weird happened. No blog posts found...
         </p>
       </Layout>
     )
@@ -24,7 +21,29 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Bio />
+      <div className="bio">
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/profile-pic.png"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
+        <p>
+        Hello, my name is Jacob Grisham, and I'm a software engineer based in San Francisco. I currently lead teams to deliver business-critical projects at PowerSchool.
+        With this blog, I'm drawing you a map of trails trekked while coding solutions and sharing campfire stories of building software in the industry, interspersed with autobiographical accounts of your author.
+        The content of this blog is a more current reflection of where I am, but you're welcome to check out my <a href={`https://jacobgrisham.com`}>professional portfolio</a> of early software engineering projects.
+        </p>
+      </div>
+      {/* <div>
+        <p>Browse curated lists of blog posts based on your profile</p>
+        <button>React and AWS technology communities</button>
+        <button>Fellow software engineers</button>
+        <button>Hiring managers</button>
+      </div> */}
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
